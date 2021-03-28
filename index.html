@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bakery</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <style>
+        /* Make the image fully responsive */
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+        }
+        #carouselTarget {
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+<div class="jumbotron text-center">
+    <h1>Gluten Free Bakery</h1>
+</div>
+
+<div id="carouselTarget" class="carousel slide" data-ride="carousel">
+
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+        <li data-target="#carouselTarget" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselTarget" data-slide-to="1"></li>
+    </ul>
+
+    <!-- The slideshow -->
+    <div class="carousel-inner" >
+        <div class="carousel-item active">
+            <img src="img/bread.jpeg" alt="Bread">
+            <div class="carousel-caption">
+                <h3>Bread</h3>
+                <p>Gluten Free</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="img/baguette.jpeg" alt="baguette">
+            <div class="carousel-caption">
+                <h3>Baguette</h3>
+                <p>Gluten Free</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#carouselTarget" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#carouselTarget" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </a>
+
+</div>
+
+</body>
+</html>
